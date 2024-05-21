@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Hospital - Services</title>
+    <link rel="icon" href="./Images/logo.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="About.html">
+                <img src="./Images/logo.jpg" width="60px" class="rounded-circle">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item pb-0">
+                        <a class="nav-link fs-6 fw-bold pb-0 p-3 NavMap" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item pb-0">
+                        <a class="nav-link fs-6 fw-bold pb-0 p-3 NavMap" href="About.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item pb-0">
+                        <a class="nav-link fs-6 fw-bold pb-0 p-3 NavMap" href="#">SERVICES</a>
+                    </li>
+                    <li class="nav-item pb-0">
+                        <a class="nav-link fs-6 fw-bold pb-0 p-3 NavMap" href="Doctors.html">DOCTORS</a>
+                    </li>
+                    <li class="nav-item pb-0">
+                        <a class="nav-link fs-6 fw-bold pb-0 p-3 NavMap" href="#Contact">CONTACT</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto navbar-expand-sm navbar-expand-md d-flex flex-row">
+                    <li class="nav-item text-center ms-1">
+                        <a href="https://maps.app.goo.gl/6Txc3z7zQW319vzK6"
+                            class="nav-link text-light pb-1 pt-1 NavIcon" target="_blank" title="Location">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item text-center ms-1">
+                        <a href="tel:9988XXXX00" class="nav-link text-light pb-1 pt-1 NavIcon" title="Contact Now">
+                            <i class="fa-solid fa-headset"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item text-center ms-1">
+                        <a href="Appointment.html" class="nav-link text-light pb-1 pt-1 NavIcon" title="Appointment">
+                            <i class="fa-regular fa-calendar-plus"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item text-center ms-1">
+                        <a href="https://www.facebook.com/login/" class="nav-link text-light pb-1 pt-1 NavIcon"
+                            title="FaceBook" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item text-center ms-1">
+                        <a href="https://www.instagram.com/_oceanhospitals_/"
+                            class="nav-link text-light pb-1 pt-1 NavIcon" title="Instagram" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item text-center ms-1">
+                        <a href="https://twitter.com/oceanhospitals_" class="nav-link text-light pb-1 pt-1 NavIcon"
+                            title="Twitter" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item text-center ms-1">
+                        <a href="https://www.linkedin.com/in/ocean-hospitals-61148a306/"
+                            class="nav-link text-light pb-1 pt-1 NavIcon" title="LinkedIn" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- content -->
+    <div class="text-center text-light container-fluid p-0 intro">
+        <div class="m-0 pt-5 pb-5 title">
+            <p class="mb-0 fs-4">Our services</p>
+            <p class="fw-bold introText">What We Do</p>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="service-block mb-5" onclick="popup('popbox1');">
+                    <img src="./Images/ChildCare.jpg" alt="" class="img-fluid">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2 title-color">Child Care</h4>
+                        <p class="mb-4">Our hospital is esteemed for its outstanding Pediatrician services, acclaimed as
+                            the premier destination for Pediatrician care in the city.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popbox text-white" id="popbox1">
+                <span onclick="popclose('popbox1');" class="fw-bold closing">X</span>
+                <div class="container text-white p-3">
+                    <div class="row">
+                        <img src="./Images/ChildCare.jpg"
+                            class="float-start col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 mx-auto mb-1 popimg">
+                        <div class="float-end col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto my-auto">
+                            <h1 class="popText1">Pediatrician</h1>
+                            <p class="popText">At Ocean Hospital, we are privileged to have a specialized and
+                                exceptional pediatrician on staff. Our pediatrician at Ocean Hospital is dedicated to providing top-notch care for
+                                children, ensuring their health and well-being. Ocean Hospital's pediatrician is renowned for their expertise and compassionate
+                                approach to pediatric healthcare. Parents can trust in the expertise and dedication of our pediatrician at Ocean
+                                Hospital, who is committed to providing the highest quality care for children of all
+                                ages.</p>
+                        </div>
+                    </div><br>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="service-block mb-5" onclick="popup('popbox2');">
+                    <img src="./Images/Cardiology.jpg" alt="" class="img-fluid">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2 title-color">Cardiology</h4>
+                        <p class="mb-4">Our hospital is esteemed for its outstanding Cardiology services, acclaimed as
+                            the premier destination for Cardiology care in the city.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popbox" id="popbox2">
+                <span onclick="popclose('popbox2');" class="fw-bold closing">X</span>
+                <div class="container text-white p-3" id="#free">
+                    <div class="row">
+                        <div class="float-start col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto my-auto">
+                            <h2 class="popText1 NoneText">Cardiology</h2>
+                            <p class="popText NoneText">Cardiology is a branch of medical science specialising in diagnosing,
+                                treating, and preventing disorders and diseases related to the heart and the circulatory
+                                system. It deals with a wide variety of heart conditions that affect people of all ages
+                                and backgrounds, such as coronary artery disease, heart failure, arrhythmias, valvular
+                                heart diseases, congenital heart defects, and many more.</p>
+
+                            <h1 class="popText1">Cardiologist</h1>
+                            <p class="popText">Ocean Hospitals takes immense pride in being the best cardiology hospital
+                                in India, offering top-notch cardiology services that are unmatched in the healthcare
+                                industry. Our team of top cardiologists in Hyderabad, with a combined experience of more
+                                than 30 years, has earned several accolades for their exceptional work in the field.</p>
+                        </div>
+                        <img src="./Images/Cardiology.jpg"
+                            class="float-end col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 mx-auto mb-1 popimg">
+                    </div>
+                </div><br>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="service-block mb-5" onclick="popup('popbox3');">
+                    <img src="./Images/Meternity.jpg" alt="" class="img-fluid">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2 title-color">Merternity</h4>
+                        <p class="mb-4">Our hospital is esteemed for its outstanding JointReplacement services,
+                            acclaimed as the premier destination for JointReplacement care in the city.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popbox text-white" id="popbox3">
+                <span onclick="popclose('popbox3');" class="fw-bold closing">X</span>
+                <div class="container text-white p-3">
+                    <div class="row">
+                        <img src="./Images/Meternity.jpg"
+                            class="float-start col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 mx-auto mb-1 popimg">
+                        <div class="float-end col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto my-auto">
+                            <h1 class="popText1">Obstetrician</h1>
+                            <p class="popText">Ocean Hospital is proud to have a specialized and outstanding
+                                obstetrician on our team. With expertise in managing pregnancies and delivering babies,
+                                our obstetrician provides exceptional care to expectant mothers and their babies. At
+                                Ocean Hospital, our obstetrician is dedicated to ensuring a safe and comfortable
+                                childbirth experience for every mother, backed by years of experience and a commitment
+                                to excellence in maternal care.</p>
+                        </div>
+                    </div><br>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="service-block mb-5" onclick="popup('popbox4');">
+                    <img src="./Images/Dermatology.jpg" alt="" class="img-fluid">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2 title-color">Dermatology</h4>
+                        <p class="mb-4">Our hospital is esteemed for its outstanding Dermatology services, acclaimed as
+                            the premier destination for Dermatology.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popbox" id="popbox4">
+                <span onclick="popclose('popbox4');" class="fw-bold closing">X</span>
+                <div class="container text-white p-3" id="#free">
+                    <div class="row">
+                        <div class="float-start col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto my-auto">
+                            <h2 class="popText1 NoneText">Dermatology</h2>
+                            <p class="popText NoneText">Dermatology is the branch of medicine concerned with diagnosing,
+                                treating, and managing skin, hair, and nail conditions and mucous membrane diseases and
+                                conditions.</p>
+                            <h1 class="popText1">Dermatologist</h1>
+                            <p class="popText">The Ocean Hospital's Department of Dermatology is home to a team of
+                                proficient dermatologists who specialise in treating a wide range of skin conditions,
+                                including but not limited to skin cancer, eczema, acne, rosacea, psoriasis, and more.
+                                Our specialised treatment programs and state-of-the-art equipment enable us to provide
+                                excellent patient care.</p>
+                        </div>
+                        <img src="./Images/Dermatology.jpg"
+                            class="float-end col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 mx-auto mb-1 popimg">
+                    </div>
+                </div><br>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="service-block mb-5" onclick="popup('popbox5');">
+                    <img src="./Images/Cancer.jpg" alt="" class="img-fluid">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2 title-color">Cancer</h4>
+                        <p class="mb-4">Our hospital is esteemed for its outstanding Cancer services, acclaimed as the
+                            premier destination for Cancer care in the city.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popbox text-white" id="popbox5">
+                <span onclick="popclose('popbox5');" class="fw-bold closing">X</span>
+                <div class="container text-white p-3">
+                    <div class="row">
+                        <img src="./Images/Cancer.jpg"
+                            class="float-start col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 mx-auto mb-1 popimg">
+                        <div class="float-end col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto my-auto">
+                            <h2 class="popText1 NoneText">Cancer</h2>
+                            <p class="popText NoneText">Cancer is a disease where abnormal cells grow uncontrollably, forming
+                                tumors or invading nearby tissues. It can occur in any part of the body and is caused by
+                                genetic, environmental, and lifestyle factors. Early detection and treatment are
+                                critical for better outcomes.</p>
+                            <h1 class="popText1">Oncologists</h1>
+                            <p class="popText">
+                                Ocean Hospital is privileged to have a distinguished oncologist, renowned for their
+                                specialized expertise in cancer care. With a deep commitment to excellence and
+                                compassion, our oncologist delivers exceptional treatment tailored to each patient's
+                                unique needs. At Ocean Hospital, our oncologist leads the way in the fight against
+                                cancer, providing unparalleled care and support to our patients and their families.</p>
+                        </div>
+                    </div><br>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="service-block mb-5" onclick="popup('popbox6');">
+                    <img src="./Images/ENT service.jpg" alt="" class="img-fluid">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2 title-color">ENT Services</h4>
+                        <p class="mb-4">Our hospital is esteemed for its outstanding ENT services, acclaimed as the
+                            premier destination for ENT care in the city.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popbox" id="popbox6">
+                <span onclick="popclose('popbox6');" class="fw-bold closing">X</span>
+                <div class="container text-white p-3" id="#free">
+                    <div class="row">
+                        <div class="float-start col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto my-auto">
+                            <h2 class="popText1 NoneText">ENT Services</h2>
+                            <p class="popText NoneText">ENT stands for Ear, Nose, and Throat, and it's a branch of medicine also
+                                known as otolaryngology. This specialty focuses on the diagnosis, treatment, and
+                                management of disorders related to the ears, nose, throat, as well as related structures
+                                of the head and neck.</p>
+                            <h1 class="popText1">ENT doctor</h1>
+                            <p class="popText">Ocean Hospital's ENT department provides comprehensive care for ear,
+                                nose, and throat disorders. The ENT specialists use advanced tools and techniques to
+                                diagnose, treat, and manage various ENT conditions, from sinusitis, sleep apnea, and
+                                head and neck cancers to ear infections and hearing loss.</p>
+                        </div>
+                        <img src="./Images/ENT service.jpg"
+                            class="float-end col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 mx-auto mb-1 popimg">
+                    </div>
+                </div><br>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="service-block mb-5" onclick="popup('popbox7');">
+                    <img src="./Images/Gastriology.jpg" alt="" class="img-fluid">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2 title-color">Gastroenterology</h4>
+                        <p class="mb-4">Our hospital is esteemed for its outstanding Gastroenterology services,
+                            acclaimed as the premier destination for Gastroenterology.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popbox text-white" id="popbox7">
+                <span onclick="popclose('popbox7');" class="fw-bold closing">X</span>
+                <div class="container text-white p-3">
+                    <div class="row">
+                        <img src="./Images/Gastriology.jpg"
+                            class="float-start col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 mx-auto mb-1 popimg">
+                        <div class="float-end col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto my-auto">
+                            <h2 class="popText1 NoneText">Gastroenterology</h2>
+                            <p class="popText NoneText">Medical gastroenterology is a specialised field dedicated to diagnosing,
+                                treating, and managing gastrointestinal, liver, biliary, and pancreatic diseases.</p>
+                            <h1 class="popText1">Gastroenterologist</h1>
+                            <p class="popText">Ocean Hospital is the best gastroenterology hospital in Hyderabad and
+                                provides personalised and comprehensive care to Gastrointestinal and hepatopancreatic
+                                biliary patients. Our experienced gastroenterologists offer state-of-the-art treatments
+                                tailored to each patient's needs. We use advanced technology and a multidisciplinary
+                                approach to diagnose and treat various diseases - GI cancers, IBD, Liver cirrhosis,
+                                Pancreas and Biliary diseases.</p>
+                        </div>
+                    </div><br>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="service-block mb-5" onclick="popup('popbox8');">
+                    <img src="./Images/DentalService.jpg" alt="" class="img-fluid">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2 title-color">Dental Service</h4>
+                        <p class="mb-4">Our hospital is esteemed for its outstanding Dental services, acclaimed as the
+                            premier destination for Dental care in the city.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popbox" id="popbox8">
+                <span onclick="popclose('popbox8');" class="fw-bold closing">X</span>
+                <div class="container text-white p-3" id="#free">
+                    <div class="row">
+                        <div class="float-start col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto my-auto">
+                            <h2 class="popText1 NoneText">Dentistry</h2>
+                            <p class="popText NoneText">Dentistry is a specialised field of medicine that focuses on studying,
+                                diagnosing, preventing, managing, and treating various diseases, disorders, and
+                                conditions related to the teeth, gums and mouth.</p>
+                            <h1 class="popText1">Dentist</h1>
+                            <p class="popText">Ocean Hospital provides outstanding dental care services to its patients.
+                                Our team of highly skilled and reputable dentists offers extensive dental treatments,
+                                including routine dental check-ups, thorough cleanings, advanced fillings, teeth
+                                extractions, root canals, and more. We are dedicated to enhancing the oral health of our
+                                patients.</p>
+                        </div>
+                        <img src="./Images/DentalService.jpg"
+                            class="float-end col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 mx-auto mb-1 popimg">
+                    </div>
+                </div><br>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="service-block mb-5" onclick="popup('popbox9');">
+                    <img src="./Images/Psychiatric.jpg" alt="" class="img-fluid">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2 title-color">Psychiatry</h4>
+                        <p class="mb-4">Our hospital is esteemed for its outstanding Psychiatry services, acclaimed as
+                            the premier destination for Psychiatry care in the city.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popbox text-white" id="popbox9">
+                <span onclick="popclose('popbox9');" class="fw-bold closing">X</span>
+                <div class="container text-white p-3">
+                    <div class="row">
+                        <img src="./Images/Psychiatric.jpg"
+                            class="float-start col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 mx-auto mb-1 popimg">
+                        <div class="float-end col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto my-auto">
+                            <h2 class="popText1 NoneText">Psychiatry</h2>
+                            <p class="popText NoneText">Psychiatry is a medical field dedicated to the diagnosis, prevention,
+                                study, and treatment of mental disorders. These include various maladaptations related
+                                to mood, behaviour, cognition, and perceptions. Psychiatrists are medical doctors who
+                                evaluate patients to determine whether their symptoms result from a physical illness, a
+                                combination of physical and mental ailments, or strictly psychiatric.</p>
+                            <h1 class="popText1">Psychiatrist</h1>
+                            <p class="popText">Ocean Hospital's Psychiatry Department provides holistic mental health
+                                services, catering to patients across all age groups. Our psychiatrist specializes in
+                                diagnosing and treating a wide array of mental health disorders, including anxiety,
+                                depression, bipolar disorder, and schizophrenia.</p>
+                        </div>
+                    </div><br>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="service-block mb-5" onclick="popup('popbox10');">
+                    <img src="./Images/Orthopedic.jpg" alt="" class="img-fluid">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2 title-color">Orthopaedic</h4>
+                        <p class="mb-4">Our hospital is esteemed for its outstanding Orthopaedic services, acclaimed as
+                            the premier destination for Orthopaedic care in the city.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popbox" id="popbox10">
+                <span onclick="popclose('popbox10');" class="fw-bold closing">X</span>
+                <div class="container text-white p-3" id="#free">
+                    <div class="row">
+                        <div class="float-start col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto my-auto">
+                            <h2 class="popText1 NoneText">Orthopaedics</h2>
+                            <p class="popText NoneText">Orthopaedics is a medical speciality that deals with musculoskeletal
+                                disorders. It involves diagnosing, treating, and preventing conditions related to bones,
+                                joints, muscles, ligaments, tendons, and other connective tissues.</p>
+                            <h1 class="popText1">Orthopaedic Doctor</h1>
+                            <p class="popText">Ocean Hospital's Orthopaedics department offers advanced care for
+                                patients with musculoskeletal, bone, and joint disorders. It provides treatment for
+                                spinal deformities, bone tumors, sports injuries, and joint degeneration using
+                                state-of-the-art diagnostic and therapeutic tools.</p>
+                        </div>
+                        <img src="./Images/Orthopedic.jpg"
+                            class="float-end col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 mx-auto mb-1 popimg">
+                    </div>
+                </div><br>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="service-block mb-5" onclick="popup('popbox11');">
+                    <img src="./Images/Pulmonology.jpg" alt="" class="img-fluid">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2 title-color">Pulmonology</h4>
+                        <p class="mb-4">Our hospital is esteemed for its outstanding Pulmonology services, acclaimed as
+                            the premier destination for Pulmonology care in the city.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popbox text-white" id="popbox11">
+                <span onclick="popclose('popbox11');" class="fw-bold closing">X</span>
+                <div class="container text-white p-3">
+                    <div class="row">
+                        <img src="./Images/Pulmonology.jpg"
+                            class="float-start col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 mx-auto mb-1 popimg">
+                        <div class="float-end col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto my-auto">
+                            <h2 class="popText1 NoneText">Pulmonology</h2>
+                            <p class="popText NoneText">Pulmonology is a medical field that focuses on respiratory disorders
+                                affecting the lungs, bronchi, pleura, and diaphragm. Pulmonologists use diagnostic tools
+                                like pulmonary function tests, bronchoscopy, chest imaging, and sleep studies to examine
+                                lung functioning and treat respiratory conditions.</p>
+                            <h1 class="popText1">Pulmonologist</h1>
+                            <p class="popText">The Pulmonology Department at Ocean Hospital is a state-of-the-art
+                                healthcare facility that effectively manages respiratory and pulmonary disorders. Our
+                                best pulmonologist in India provides comprehensive respiratory care and is well-equipped
+                                to handle critically ill patients through modern diagnostic techniques, treatments, and
+                                minimally invasive procedures.</p>
+                        </div>
+                    </div><br>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="service-block mb-5" onclick="popup('popbox12');">
+                    <img src="./Images/Opthomology.jpg" alt="" class="img-fluid">
+                    <div class="content">
+                        <h4 class="mt-4 mb-2 title-color">Ophthalmology</h4>
+                        <p class="mb-4">Our hospital is esteemed for its outstanding Ophthalmology services, acclaimed
+                            as the premier destination for Ophthalmology care in the city.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popbox" id="popbox12">
+                <span onclick="popclose('popbox12');" class="fw-bold closing">X</span>
+                <div class="container text-white p-3" id="#free">
+                    <div class="row">
+                        <div class="float-start col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto my-auto">
+                            <h2 class="popText1 NoneText">Ophthalmology</h2>
+                            <p class="popText NoneText">Ophthalmology is the branch of medicine and surgery concerned with the
+                                diagnosis and treatment of disorders and diseases of the eye. Ophthalmologists are
+                                medical doctors who specialize in eye and vision care, from prescribing glasses and
+                                contact lenses to performing complex eye surgeries</p>
+                            <h1 class="popText1">Ophthalmologist</h1>
+                            <p class="popText">
+                                Ocean Hospital boasts a team of highly specialized and exceptional ophthalmologists
+                                dedicated to providing top-tier eye care. Among them, stands an ophthalmologist renowned
+                                for their expertise and commitment to excellence. With a focus on precision and
+                                patient-centered care,</p>
+                        </div>
+                        <img src="./Images/Opthomology.jpg"
+                            class="float-end col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 mx-auto mb-1 popimg">
+                    </div>
+                </div><br>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid pt-3 pb-3 servicesAppointment">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="cta-content">
+                        <div class="divider mb-4"></div>
+                        <h2 class="mb-5 text-lg fw-bold">We are pleased to offer you the <span class="text-light">chance
+                                to have the healthy life</span></h2>
+                        <a href="Appointment.html">
+                            <button type="button" class="text-light fw-bold Appointment">
+                                Get an Appointment<i class="fa-solid fa-angle-right ms-3"></i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+    <!-- for fixed sticker to nav to the top-->
+    <div class="text-center ArrowToTop">
+        <a href="#" class="text-decoration-none text-light">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+
+    <!-- Contact -->
+    <div class="container-fluid bg-body-tertiary m-0" id="Contact">
+        <br>
+        <div class="row m-0">
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 mx-auto">
+                <a href="https://maps.app.goo.gl/6Txc3z7zQW319vzK6" class="text-decoration-none" target="_blank">
+                    <img src="./Images/logo.jpg" alt="Logo..." width="100px" class="rounded-circle">
+                    <p class="fw-bold Live">(Live Address)</p>
+                </a>
+                <p class="pe-none"><small>Seven hill colony, Rd Number 1, adjacent to flyover, P.Jangam Reddy Nagar,
+                        Hyderabad,
+                        Telangana 500032</small></p>
+
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 mx-auto">
+                <h3>Social Media</h3>
+                <p class="pe-none"><small>Free To Follow Us On Our Social Media Platforms.<br>All The Links Are Provided
+                        Below</small></p>
+                <section class="m-4 mt-1">
+                    <a class="text-decoration-none text-dark me-3" href="https://www.facebook.com/login/"
+                        target="_blank">
+                        <i class="fa-brands fa-facebook ICONS"></i></a>
+                    <a class="text-decoration-none text-dark me-3" href="https://www.instagram.com/_oceanhospitals_/"
+                        target="_blank">
+                        <i class="fa-brands fa-instagram ICONS"></i></a>
+                    <a class="text-decoration-none text-dark me-3" href="https://twitter.com/oceanhospitals_"
+                        target="_blank"><i class="fa-brands fa-twitter ICONS"></i></a>
+                    <a class="text-decoration-none text-dark me-3"
+                        href="https://www.linkedin.com/in/ocean-hospitals-61148a306/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in ICONS"></i></a>
+                </section>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 mx-auto">
+                <h3>Quick Links</h3>
+                <section class="mt-1 ms-0 m-4">
+                    <div>
+                        <a class="text-decoration-none links" href="index.html">
+                            <i class="fa-solid fa-arrow-right"></i>&nbsp; &nbsp;Home
+                        </a>
+                    </div>
+                    <div>
+                        <a class="text-decoration-none links" href="About.html">
+                            <i class="fa-solid fa-arrow-right"></i>&nbsp; &nbsp;About Us
+                        </a>
+                    </div>
+                    <div>
+                        <a class="text-decoration-none links" href="Appointment.html">
+                            <i class="fa-solid fa-arrow-right"></i>&nbsp; &nbsp;Appointment
+                        </a>
+                    </div>
+                    <div>
+                        <a class="text-decoration-none links" href="#">
+                            <i class="fa-solid fa-arrow-right"></i>&nbsp; &nbsp;Services
+                        </a>
+                    </div>
+                    <div>
+                        <a class="text-decoration-none links" href="Doctors.html">
+                            <i class="fa-solid fa-arrow-right"></i>&nbsp; &nbsp;Doctors
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 mx-auto">
+                <h3>Contact info</h3>
+                <section class="mt-1 ms-0 m-4">
+                    <div class="mt-2">
+                        <a href="tel:9988XXXX00" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-phone ICONS"></i>&nbsp; &nbsp; 1-800-XXX-6200
+                        </a>
+                    </div>
+                    <div class="mt-2">
+                        <a href="mailto:forpurpose1112@gmail.com" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-envelope ICONS"></i>&nbsp; &nbsp; oceanhospitals@gmail.com
+                        </a>
+                    </div>
+                    <div class="mt-2">
+                        <a href="https://maps.app.goo.gl/6Txc3z7zQW319vzK6" class="text-dark text-decoration-none"
+                            target="_blank">
+                            <i class="fa-solid fa-location-dot ICONS"></i>&nbsp; &nbsp; Hyderabad
+                        </a>
+                    </div>
+                    <div class="mt-2">
+                        <a href="tel:987800XXX0" class="text-dark text-decoration-none">
+                            <i class="fa-solid fa-phone ICONS"></i>&nbsp; &nbsp; 02-987800XXX0
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid bg-body-tertiary" id="ForRights">
+        <div class="row">
+            <div class="text-center">
+                <p>2024 &copy; Ocean Hospital <span class="foot">| All Rights Reserved.</span></p>
+                <p>Developed by <b>AKHILA</b></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

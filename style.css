@@ -1,0 +1,238 @@
+.NavIcon {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: rgb(4, 157, 218);
+}
+
+.NavMap:hover {
+  color: rgb(4, 157, 218);
+  border-bottom: 3px solid rgb(4, 157, 218);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  .NavMap:hover {
+    border-bottom: none;
+  }
+}
+
+#contact {
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, rgb(255, 128, 0) 50%, rgb(4, 157, 218) 50%) 1;
+}
+
+.foot {
+  color: rgb(4, 157, 218);
+}
+
+#ForRights {
+  border-top: 1px solid rgb(255, 128, 0);
+}
+
+.Greeting {
+  background-image: url('./Images/Building.jpg');
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.Greeting h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.Appointment {
+  background-color: rgb(255, 128, 0);
+  border-radius: 20px;
+  border: none;
+  padding: 10px 20px;
+}
+
+.Appointment:hover {
+  background-color: rgb(4, 157, 218);
+  box-shadow: 0 0 5px 0px black;
+}
+
+.Live {
+  color: rgb(255, 128, 0);
+}
+
+.features {
+  margin-top: -70px;
+}
+
+.feature-item {
+  flex-basis: 33.33%;
+  margin: 0px 10px;
+  padding: 40px 30px;
+  background-color: #fff;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+}
+
+.feature-icon i {
+  font-size: 50px;
+  color: rgb(4, 157, 218);
+}
+
+.w-hours li {
+  padding: 6px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.form-control {
+  background: #f4f9fc;
+  height: 55px;
+  border-color: rgba(154, 154, 154, 0.5);
+}
+
+.intro {
+  background-image: url('./Images/Intropicture.jpg');
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.introText {
+  letter-spacing: 10px;
+  font-size: 80px;
+}
+
+@media screen and (max-width: 800px) {
+  .introText {
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
+}
+
+.strength {
+  font-size: 60px;
+  color: rgb(4, 157, 218);
+}
+.strength1 {
+  font-size: 60px;
+  color: rgb(255, 128, 0);
+}
+
+.service-block {
+  padding: 20px;
+  margin-top: 40px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0 0 38px rgba(21, 40, 82, 0.07);
+}
+
+.service-block img {
+  width: 100%;
+  margin-top: -60px;
+  border: 5px solid #fff;
+}
+
+.servicesAppointment {
+  background: url('./Images/Intropicture.jpg');
+  background-size: cover;
+  position: relative;
+  height: 300px;
+}
+
+.divider {
+  width: 40px;
+  height: 5px;
+  background: rgb(4, 157, 218);
+}
+
+.Fecility {
+  height: 300px;
+}
+
+.DoctorImg {
+  width: 230px;
+  height: 330px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.DoctorImg:hover {
+  filter: sepia(50%);
+  transform: scale(1.1);
+  transform: scale(0.9) rotate(-5deg);
+}
+
+.DoctorBox{
+  border: 1px solid #ccc;
+  text-align: center;
+  margin: 20px 10px;
+}
+.links {
+  color: black;
+}
+
+.links:hover {
+  color: rgb(255, 128, 0);
+}
+
+.ICONS:hover {
+  transform: scale(1.5);
+  color: rgb(4, 157, 218);
+}
+
+.popbox {
+  width: 100%;
+  height: 110vh;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.closing {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  color: rgb(4, 157, 218);
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+}
+
+.popText{
+  color: black;
+}
+.popText1{
+  color: rgb(255, 128, 0);
+}
+
+@media screen and (max-width: 767px) {
+  .popimg {
+    display: none;
+  }
+ .NoneText{
+  display: none;
+ }
+}
+
+.ArrowToTop {
+  background-color: rgb(255, 128, 0);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  box-shadow: 0 0 5px 1px black;
+  padding-top: 10px;
+  bottom: 5%;
+  right: 5%;
+}
